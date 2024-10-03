@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sadbear, .hehebear, .sadbear2, .sadbear3, .sadbear4 {
+    width: 200px;
+    height: 200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+}
+
+#yes-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+#no-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .button-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #no-button, #yes-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
